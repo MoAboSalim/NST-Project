@@ -22,7 +22,6 @@ def mean_variance_norm(feat):
     return (feat - mean.expand(size)) / std.expand(size)
 
 # ---------------- Color Preservation Logic ----------------
-# هذه الدوال تقوم بتحويل نظام الألوان لفصل الإضاءة (Y) عن الألوان (UV)
 def rgb2yuv(image):
     # image: batch x 3 x H x W
     y = 0.299 * image[:, 0, :, :] + 0.587 * image[:, 1, :, :] + 0.114 * image[:, 2, :, :]
