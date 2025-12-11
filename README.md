@@ -1,55 +1,83 @@
-# NST-Project
-Arbitrary Style Transfer with Style-Attentional Networks
+# NST Project
+Random Pattern Transfer Using Attentional Pattern Networks
 
-🖼️ SANet – Neural Style Transfer for Self-Attention
-High-Quality Artistic Style Transfer Using Self-Attention Networks
+🌟 Project Overview
 
-This version of the project performs high-quality Neural Style Transfer using Self-Attention Networks (SANet) with support for:
+Name: NST Project
 
-Object Control (Alpha Mix Control)
+Focus: Random Pattern Transfer Using Attentional Pattern Networks (SANet).
 
-Preservation of Original Image Colors (Color Preservation)
+Goal: To implement high-quality neural pattern transfer.
 
-Image Size Selection During Inference
+✨ Supported Features
+The project supports several advanced features:
 
-Accelerated Training Using Mixed Precision (AMP)
+Object control (Alpha blending control)
 
-TensorBoard Support
+Preservation of original image colors (Color preservation)
 
-VGG Model Configured to Work with SANet
+Image sizing during inference
 
-✔️ Self-Attention Style Transfer (SANet)
+Accelerated training using mixed resolution (AMP)
 
-✔️ Adaptive Instance Normalization (AdaIN)
+TensorBoard support
 
-✔️ Color Preservation (YUV-based logic)
+VGG model configured for SANet
 
-✔️ Fast GPU Inference
+Self-attentional pattern rendering (SANet)
 
-✔️ Supports Large Images
+Adaptive state normalization (AdaIN)
 
-✔️ Training + Evaluation scripts
+Color preservation (YUV-based logic)
 
-✔️ Clean, optimized PyTorch implementation
+Fast GPU inference
 
-📁 Project Structure
-project/
-│── eval_clean.py          # Inference / style transfer on images
-│── train.py               # Training SANet using content & style datasets
-│── vgg_normalised.pth     # Pretrained VGG weights
-│── decoder.pth            # Decoder trained weights
-│── transformer.pth        # Transform/SANet weights
-│── datasets/
-│     ├── content/
-│     └── style/
-└── output/
+Training and evaluation programs
 
-The project supports Style Transfer via a Flask API, allowing you to send the Content image and Style image via HTTP request and receive the resulting image ready for quality evaluation.
+Clean and optimized PyTorch implementation
 
-⚙️ How It Works
+📁 Project Structure and Files
+The README file contains a list of several important files and folders:
 
-The core file for running the API is:
+Project Structure:
 
-app.py
+eval_clean.py: Image pattern rendering/rendering
+
+train.py: SANet training using content and pattern datasets
+
+vgg_normalised.pth: Pre-trained VGG Weights
+
+decoder.pth: Trained weights for the decoder
+
+transformer.pth: Transformer/SANet weights
+
+content/: Content images folder
+
+style/: Style images folder
+
+output/: Output images folder
+
+💾 Datasets Used
+For Content Images: COCO Train 2014
+
+For Style Images: Painter By Numbers
+
+🚀 How it Works (API)
+
+Functions: The project supports transferring styles via the Flask API.
+
+Usage: Allows sending a content image and a style image via an HTTP request and receiving the resulting image.
+
+Basic API file: app.py
+
+👥 Team Contributions
+This project was a collaborative effort. The table below outlines the primary responsibilities and key contributions of each team member:
+Team Member,Primary Responsibility,Key Contributions
+Yustina,Network Architecture Definition,"Defining all network components: VGG Encoder, SANet, Transformer, and Decoder."
+Fatima,Data Preparation & Processing,Preparing datasets and handling their conversion into tensors for training.
+Mohamed,Training & Core Logic,"Network training process, calculating loss functions, and managing checkpoint saving."
+Jamal,Inference & Output Handling,"Executing the network on single or multiple images (inference), saving the final output, and handling color/alpha blending."
+Ahmed,Evaluation Metrics,Implementation and calculation of the Evaluation Metrics.
+Ziad & Nour,API Development,Developing and maintaining the Flask API (app.py) for style transfer execution.
 
 
