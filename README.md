@@ -72,12 +72,17 @@ Basic API file: app.py
 
 👥 Team Contributions
 This project was a collaborative effort. The table below outlines the primary responsibilities and key contributions of each team member:
-Team Member,Primary Responsibility,Key Contributions
+
 Yustina,Network Architecture Definition,"Defining all network components: VGG Encoder, SANet, Transformer, and Decoder."
+
 Fatima,Data Preparation & Processing,Preparing datasets and handling their conversion into tensors for training.
+
 Mohamed,Training & Core Logic,"Network training process, calculating loss functions, and managing checkpoint saving."
+
 Jamal,Inference & Output Handling,"Executing the network on single or multiple images (inference), saving the final output, and handling color/alpha blending."
+
 Ahmed,Evaluation Metrics,Implementation and calculation of the Evaluation Metrics.
+
 Ziad & Nour,API Development,Developing and maintaining the Flask API (app.py) for style transfer execution.
 
 
