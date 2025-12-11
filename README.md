@@ -52,4 +52,4 @@ The core file for running the API is:
 
 app.py
 
-It contains 3 main operations:
+
